@@ -1,0 +1,250 @@
+# ===========================================
+# Java Machine Learning Project - .gitignore
+# ===========================================
+
+# ===========================================
+# LARGE FILES & DATASETS (>100MB)
+# ===========================================
+
+# MNIST Dataset files (CSV format)
+*.csv
+mnist_*.csv
+archive/
+data/
+datasets/
+
+# Weka JAR file (large binary)
+weka.jar
+weka-*.jar
+weka-3-8-6/
+
+# Large model files
+*.model
+models/
+trained_models/
+
+# Large image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+charts/
+images/
+screenshots/
+
+# Large text files
+*.txt
+results/
+outputs/
+logs/
+
+# ===========================================
+# JAVA COMPILED FILES
+# ===========================================
+
+# Compiled class files
+*.class
+
+# JAR files (except weka.jar which is in large files section)
+*.jar
+
+# Package files
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ===========================================
+# IDE & EDITOR FILES
+# ===========================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ===========================================
+# OPERATING SYSTEM FILES
+# ===========================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# BUILD & DEPENDENCY FILES
+# ===========================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ant
+build/
+dist/
+
+# ===========================================
+# TEMPORARY & CACHE FILES
+# ===========================================
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# ===========================================
+# PROJECT SPECIFIC FILES
+# ===========================================
+
+# Scripts (keep build and run scripts)
+# build.sh
+# run.sh
+
+# Documentation (keep README and reports)
+# README.md
+# BAO_CAO_MNIST.md
+
+# Configuration files (keep if needed)
+# config.properties
+# application.properties
+
+# ===========================================
+# SECURITY & SENSITIVE FILES
+# ===========================================
+
+# API keys and secrets
+*.key
+*.pem
+*.p12
+*.jks
+secrets/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================================
+# BACKUP FILES
+# ===========================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ===========================================
+# NOTES
+# ===========================================
+
+# Files to keep in repository:
+# - Source code (.java files)
+# - Build scripts (build.sh, run.sh)
+# - Documentation (README.md, BAO_CAO_MNIST.md)
+# - Configuration files (if small)
+# - .gitignore (this file)
+
+# Files to exclude (>100MB):
+# - weka.jar (download separately)
+# - MNIST CSV files (download separately)
+# - Trained models (.model files)
+# - Generated images/charts
+# - Large datasets
+
+# To add large files later, use Git LFS:
+# git lfs track "*.csv"
+# git lfs track "*.model"
+# git lfs track "*.png"
